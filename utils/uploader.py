@@ -53,10 +53,10 @@ async def start_file_uploader(file_path, id, directory_path, filename, file_size
     ).file_size
 
     DRIVE_DATA.new_file(directory_path, filename, message.id, size)
-    print("directory_path:", directory_path)
-    print("Name:", filename)
-    print("message id:", message.id)
-    print("size:", size)
+    #print("directory_path:", directory_path)
+    #print("Name:", filename)
+    #print("message id:", message.id)
+    #print("size:", size)
     PROGRESS_CACHE[id] = ("completed", size, size)
 
     try:
